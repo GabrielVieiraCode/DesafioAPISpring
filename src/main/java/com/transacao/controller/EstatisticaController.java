@@ -22,7 +22,8 @@ public class EstatisticaController {
 
 	@Autowired
 	TransacaoService transacaoService;
-
+	
+	//Metodo para buscar as estastisticas
 	@GetMapping("/estatistica")
 	public synchronized ResponseEntity<Estatistica> getEstatistica() {
 		return estatisticaService.estatisticas();
